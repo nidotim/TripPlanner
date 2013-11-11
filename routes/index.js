@@ -283,6 +283,15 @@ module.exports = function(app){
 			title: '聊天室',
 		});
 	});
+
+	app.post('/searchPeople', checkLogin);
+	app.post('/searchPeople', function(req, res){
+		console.log("=================");
+		var msg = "123182312hasdf";
+		res.writeHead(200, {"Content-Type":"application/json;","Content-Length":msg.length});
+		res.end(msg);
+  
+	})
 };
 
 function checkLogin(req, res, next){
