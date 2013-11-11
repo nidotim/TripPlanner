@@ -1,0 +1,36 @@
+<% include layout_header %>
+<form class="form-horizontal" method="post">
+
+	<fieldset>
+	 	<legend> 建立旅遊 </legend>
+	 	<div class="control-group">
+	 		<label class="control-label" for="tripname">旅遊名稱</label>
+	 		<div class="controls">
+	 			<input type="text" class="input-xlarge" id="tripname" name="tripname">	 			
+	 		</div>
+	 	</div>
+	 	<div class="control-group">
+	 		<label class="control-label" for="email">E-mail</label>
+	 		<div class="controls">
+	 			<input type="text" class="input-xlarge" id="email" name="email">	 			
+	 		</div>
+	 	</div>
+	 	<div class="control-group">
+	 		<label class="control-label" for="password">密碼</label>
+	 		<div class="controls">
+	 			<input type="password" class="input-xlarge" id="password" name="password">
+	 		</div>
+	 	</div>
+	 	<div class="control-group">
+	 		<label class="control-label" for="password-repeat">重複輸入</label>
+	 		<div class="controls">
+	 			<input type="password" class="input-xlarge" id="password-repeat" name="password-repeat">
+	 		</div>
+	 	</div>
+	 	<div class="form-actions">
+	 		<button type="submit" class="btn btn-primary">註冊</button>
+	 	</div>
+ 	</fieldset>
+ </form>
+
+<% include layout_footer %>

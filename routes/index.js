@@ -262,12 +262,27 @@ module.exports = function(app){
 		});
 	});
 
+
+	app.get('/trip', checkLogin);
+	app.get('/trip', function(req, res){
+		res.render('trip', {
+			title: '建立旅行',
+		});
+	});
+
+	app.get('/friend', checkLogin);
+	app.get('/friend', function(req, res){
+		res.render('friend', {
+			title: '好友',
+		});
+	});
+
 	app.get('/chat', checkLogin);
 	app.get('/chat', function(req, res){
 		res.render('chat', {
 			title: '聊天室',
-		})
-	})
+		});
+	});
 };
 
 function checkLogin(req, res, next){
